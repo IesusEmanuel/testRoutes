@@ -1,6 +1,6 @@
 .game-container {
    width: 20rem;
-   margin: .4rem 1rem;
+   margin: 1.4rem 1rem;
    background: black;
    border-radius: 2rem;
    transition: all 400ms ease;
