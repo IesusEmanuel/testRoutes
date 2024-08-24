@@ -4,6 +4,7 @@ import Home from "/src/components/Home/home.jsx";
 import Sellers from "/src/components/Sellers/sellers.jsx";
 import Ofertas from "/src/components/Ofertas/ofertas.jsx";
 import Avaliacoes from "/src/components/Avaliacoes/avaliacoes.jsx";
+import Todos from "/src/components/Todos/todos.jsx";
 
 const showModal = () => {
   const screen = document.querySelector(".loginScreen");
@@ -32,6 +33,7 @@ export default function App() {
           <Link className="link poppins" to="/sellers">Mais Vendidos</Link>
           <Link className="link poppins" to="/ofertas">Ofertas</Link>
           <Link className="link poppins" to="/avaliacoes">Avaliações</Link>
+          <Link className="link poppins" to="/todos">Todos</Link>
           <button onClick= { showModal } className="btn-header-common align-container-center white uppercase poppins-600 flex-row pointer transition">
           Acessar</button>
         </nav>
@@ -57,6 +59,7 @@ export default function App() {
         <Route path="/sellers" element={<Sellers />} />
         <Route path="/ofertas" element={<Ofertas />} />
         <Route path="/avaliacoes" element={<Avaliacoes />} />
+        <Route path="/todos" element={<Todos />} />
       </Routes>
     </Router>
   )

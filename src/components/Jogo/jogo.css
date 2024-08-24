@@ -17,6 +17,7 @@
     aspect-ratio: 1/1;
   }}
 .game-name {
+  text-align: center;
   margin-top: 1rem;
 }
 .platforms {
