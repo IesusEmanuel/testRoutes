@@ -5,6 +5,7 @@ import Sellers from "/src/components/Sellers/sellers.jsx";
 import Ofertas from "/src/components/Ofertas/ofertas.jsx";
 import Avaliacoes from "/src/components/Avaliacoes/avaliacoes.jsx";
 import Todos from "/src/components/Todos/todos.jsx";
+import Footer from "/src/components/Footer/footer.jsx";
 
 const showModal = () => {
   const screen = document.querySelector(".loginScreen");
@@ -25,7 +26,7 @@ export default function App() {
     <Router>
       <header className="header">
         <Link className="link poppins" to="/"><div className="pointer container-logo flex-row">
-          <img src="https://th.bing.com/th/id/OIP.8N2przcB28LJn49HSX774AHaFj?rs=1&pid=ImgDetMain"></img>
+          <img src="/src/assets/snoop-logo.svg"></img>
         </div></Link>
 
         <nav className="nav-container flex-row align-container-center">
@@ -53,7 +54,7 @@ export default function App() {
         <button className="transition pointer send">Login</button>
         <button className="transition pointer send">Registrar</button>
       </div>
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sellers" element={<Sellers />} />
@@ -61,6 +62,8 @@ export default function App() {
         <Route path="/avaliacoes" element={<Avaliacoes />} />
         <Route path="/todos" element={<Todos />} />
       </Routes>
+
+      <Footer />
     </Router>
   )
 }

@@ -5,7 +5,7 @@
   align-items: left;
   text-align: left;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.8)), url('./src/assets/home-picture.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.8)), url('https://getwallpapers.com/wallpaper/full/7/7/5/33626.jpg');
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;

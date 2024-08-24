@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "/src/App.css";
-// import "./sellers.css";
 import Text from "/src/components/Texts/texts.jsx";
 import Jogo from "/src/components/Jogo/jogo.jsx";
+import Pagination from "/src/components/Pagination/pagination.jsx";
 
 const Todos = () => {
   return (
@@ -103,6 +103,7 @@ const Todos = () => {
         <Jogo game_name="Minecraft" image="https://th.bing.com/th/id/OIP.PmmQxBhOzdM9oaY91WxSlgHaHa?rs=1&pid=ImgDetMain" discount="-80%" price="R$9,90"/>
 
       </div>
+      <Pagination />
     </>
   )
 }
