@@ -1,4 +1,6 @@
-.allAval {
+.text-start {
+  gap: .1rem;
+}.allAval {
   width:100%;
   justify-content: center;
   padding: 2rem 0;
