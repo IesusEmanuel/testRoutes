@@ -5,8 +5,6 @@ import Text from "/src/components/Texts/texts.jsx";
 import Jogo from "/src/components/Jogo/jogo.jsx";
 
 const Sellers = () => {
-
-  
   return (
     <>
       <Text text="Mais Vendidos" />

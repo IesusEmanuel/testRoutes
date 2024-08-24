@@ -47,7 +47,10 @@
   cursor: pointer;
   }.flex-row {
   display: flex;
-  }.size-3 {
+  }.flex-column {
+  display: flex;
+  flex-direction:column;
+}.size-3 {
   font-size: 3rem;
   }.sellersText {
   margin: 1rem 0;
