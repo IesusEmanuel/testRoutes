@@ -82,13 +82,16 @@
   }.btn-header-common {
   padding: 1.2rem;
   border-radius: .4rem;
-  width: 7rem;
+  width: 11rem;
   height: 3.6rem;
   border: solid 1px white;
   background: transparent;
   }.btn-header-common:hover {
   background: white;
   color: black;
+  }.uil-signin {
+  font-size: 1.3rem;
+  margin-left: .6rem;
   }
 
 
@@ -132,7 +135,19 @@
   top: 30px;
   right: 20px;
 }.allowedConnected {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   gap: .6rem;
+  border: solid 1px red;
+  width: 100%;
+  height: auto;
+  span {
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+  }
 }.blur-background {
   display: none;
   position: fixed;

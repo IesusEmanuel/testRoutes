@@ -36,7 +36,7 @@ export default function App() {
           <Link className="link poppins" to="/avaliacoes">Avaliações</Link>
           <Link className="link poppins" to="/todos">Todos</Link>
           <button onClick= { showModal } className="btn-header-common align-container-center white uppercase poppins-600 flex-row pointer transition">
-          Acessar</button>
+          Acessar <i class="uil uil-signin"></i> </button>
         </nav>
       </header>
 
@@ -45,11 +45,12 @@ export default function App() {
         <i onClick={ hideModal } class="pointer absolute close white size-2 uil uil-multiply"></i>
         <label className="mont-500 white" for="email">Email: </label>
         <input type="email" placeholder="email"></input>
+        <br></br>
         <label className="mont-500 white" for="senha">Senha: </label>
         <input type="password" placeholder="senha"></input>
-        <div className="allowedConnected flex-row align-container-center">
+        <div className="allowedConnected">
           <input type="checkbox"></input>
-          <span className="mont-300 size-0-7 white">Permanecer Conectado</span>
+          <span className="mont-300 white">Permanecer Conectado</span>
         </div>
         <button className="transition pointer send">Login</button>
         <button className="transition pointer send">Registrar</button>
