@@ -109,15 +109,12 @@
   margin-left: 37vw;
   z-index: 999;
   input {
-    height: 30px;
-    padding: .1rem;
-    border-radius: 0;
+    height: 2.3rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
     background: none;
     border: solid 1px white;
-  }input[placeholder] {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding-left: 10px;
+    caret-color: #c0c0c0;
   }
   button {
     margin-top: 1rem;
@@ -137,15 +134,14 @@
 }.allowedConnected {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  justify-content: left;
+  align-content: left;
+  align-items: center;
   gap: .6rem;
-  border: solid 1px red;
+  padding: .3rem 0;
   width: 100%;
   height: auto;
   span {
-    text-align: left;
-    width: 100%;
     font-size: 1rem;
   }
 }.blur-background {
@@ -158,4 +154,34 @@
   background: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
   backdrop-filter: blur(5px); /* Efeito de desfoque */
   z-index: 998; /* Garantir que o desfoque fique acima do conteúdo */
+}
+
+
+/* //////////// SCROLLBAR ////////////////////////
+*/
+
+/* Estilizando a scrollbar da página inteira para WebKit */
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+
+/* Estilizando a scrollbar da página inteira para Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #1b1818;
 }

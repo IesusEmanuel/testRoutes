@@ -44,10 +44,10 @@ export default function App() {
       <div class="gone loginScreen flex-column">
         <i onClick={ hideModal } class="pointer absolute close white size-2 uil uil-multiply"></i>
         <label className="mont-500 white" for="email">Email: </label>
-        <input type="email" placeholder="email"></input>
+        <input type="email"></input>
         <br></br>
         <label className="mont-500 white" for="senha">Senha: </label>
-        <input type="password" placeholder="senha"></input>
+        <input type="password"></input>
         <div className="allowedConnected">
           <input type="checkbox"></input>
           <span className="mont-300 white">Permanecer Conectado</span>
