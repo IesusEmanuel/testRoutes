@@ -129,7 +129,7 @@
     background: white;
   }
 }.close {
-  top: 30px;
+  top: 20px;
   right: 20px;
 }.allowedConnected {
   display: flex;

@@ -41,11 +41,10 @@ export default function App() {
       </header>
 
       <div className="blur-background"></div>
-      <div class="gone loginScreen flex-column">
+      <form class="gone loginScreen flex-column">
         <i onClick={ hideModal } class="pointer absolute close white size-2 uil uil-multiply"></i>
         <label className="mont-500 white" for="email">Email: </label>
         <input type="email"></input>
-        <br></br>
         <label className="mont-500 white" for="senha">Senha: </label>
         <input type="password"></input>
         <div className="allowedConnected">
@@ -54,7 +53,7 @@ export default function App() {
         </div>
         <button className="transition pointer send">Login</button>
         <button className="transition pointer send">Registrar</button>
-      </div>
+      </form>
 
       <Routes>
         <Route path="/" element={<Home />} />
