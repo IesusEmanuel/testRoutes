@@ -22,6 +22,12 @@ const Jogo = ({ game_name, image, discount, price }) => {
           <span className="mont-500 white size-1 discount">{ discount }</span>
           <span style={{ backgroundColor: price === "Gratuito" ? "#00712D" : "#404040"}} className="mont-500 white size-1 price">{ price }</span>
         </div>
+
+        <div className="flex-column actions">
+          <span className="poppins nome-delete-edit">{ game_name }</span>
+          <button className="pointer transition edit-btn">Editar</button>
+          <button className="pointer transition delete-btn">Excluir</button>
+        </div>
       </div>
   )
 }

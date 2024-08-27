@@ -34,24 +34,28 @@ const Add = () => {
         placeholder="Nome do Jogo"
         value={game_name}
         onChange={(e) => setGame_name(e.target.value)}
+        required
       />
       <input
         type="text"
         placeholder="Preço"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
+        required
       />
       <input
         type="text"
         placeholder="Desconto"
         value={discount}
         onChange={(e) => setDiscount(e.target.value)}
+        required
       />
       <input
         type="text"
         placeholder="Imagem"
         value={image}
         onChange={(e) => setImage(e.target.value)}
+        required
       />
       <button className="pointer transition" type="submit">Adicionar Jogo</button>
     </form>

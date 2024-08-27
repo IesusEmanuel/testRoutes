@@ -1,11 +1,12 @@
 .game-container {
+  position: relative;
    width: 20rem;
    margin: 1.4rem 1rem;
    background: black;
    border-radius: 2rem;
    transition: all 400ms ease;
 }.game-container:hover {
-  box-shadow: 10px 2px 32px rgba(0, 0, 0, 1);
+  box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.4);
 }.game-image {
   margin: 0;
   width: 20rem;
@@ -45,4 +46,45 @@
   }
 }.green {
   background-color: green;
+}
+
+/* /////////// BOTOES //////////////1 */
+
+.actions {
+  z-index: 996;
+  position: absolute;
+  top: 50%;
+  right: -60px; /* Posição inicial fora do container */
+  transform: translateY(-50%);
+  opacity: 0;
+  gap: .8rem;
+  transition: opacity 0.3s, right 0.3s ease;
+  button {
+    border-radius: .3rem;
+    width: 5rem;
+    height: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+  }.edit-btn {
+    background: #36acd3;
+    color: white;
+    border: none;
+  }.delete-btn {
+    background: #cf3f3f;
+    color: white;
+    border: none;
+  }.edit-btn:hover {
+    background: white;
+    color: #36acd3;
+  }.delete-btn:hover {
+    color: #cf3f3f;
+    background: white;
+  }
+}.game-container:hover .actions {
+  right: -70px; /* Mover para o lado do container ao passar o mouse */
+  opacity: 1;
+}.nome-delete-edit {
+  padding: .2rem;
+  background: white;
+  color: black;
+  font-weight: 600;
 }
