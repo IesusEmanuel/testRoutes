@@ -3,6 +3,7 @@ import "/src/App.css";
 import Text from "/src/components/Texts/texts.jsx";
 import Jogo from "/src/components/Jogo/jogo.jsx";
 import Pagination from "/src/components/Pagination/pagination.jsx";
+import Adicionar from "/src/components/Adicionar/add.jsx";
 
 const Todos = () => {
   return (
@@ -102,6 +103,7 @@ const Todos = () => {
         <Jogo game_name="The Legend of Zelda: Breath of the Wild" image="https://tinfoil.media/i/01007EF00011E000/0/0/d3c210e61e8487200fc4c344987243a60257838187a69a6a81c42d7447d5d192" discount="-20%" price="R$159,90"/>
         <Jogo game_name="Minecraft" image="https://th.bing.com/th/id/OIP.PmmQxBhOzdM9oaY91WxSlgHaHa?rs=1&pid=ImgDetMain" discount="-80%" price="R$9,90"/>
 
+      <Adicionar />
       </div>
       <Pagination />
     </>
